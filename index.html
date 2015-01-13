@@ -15,12 +15,17 @@
       <source src="media/moi-jaime-skier.mp4" type="video/mp4" />
       <source src="media/moi-jaime-skier.webm" type="video/webm" />
       <source src="media/moi-jaime-skier.ogg" type="video/ogg" />
-      <object ..... >
-        <param name="src" value="media/moi-jaime-skier.f4v" />
-        <param name="allowfullscreen" value="true"/>
-      </object>
+      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="640" height="480" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0">
+  <param name="allowFullScreen" value="true"/>
+  <param name="allowscriptaccess" value="always"/>
+  <param name="src" value="media/moi-jaime-skier.f4v"/>
+  <embed type="application/x-shockwave-flash" width="640" height="480" src="media/moi-jaime-skier.f4v" allowscriptaccess="always" allowfullscreen="true">
+  </embed>
+</object>
       <p>OOPS!!! Your Browser is very outdated and needs an upgrade to play this movie </p>
    </video>
+
+<!--     create the base 64 image in canvas before pasting it in my html code.-->
 <!--
     <canvas id="myCanvas" width="640" height="480"></canvas>
         <script>
@@ -31,16 +36,17 @@
           var width = 640;
           var height = 480;
           var imageObj = new Image();
-            imageObj.src = 'media/skier.png';
          imageObj.onload = function() {
             context.drawImage(imageObj, x, y, width, height);
              var dataURL = canvas.toDataURL();
              console.log(dataURL);
           };
+         imageObj.src = 'media/skier.png';
 
 
         </script>
 -->
+
       </div>
 
 </body>
